@@ -1,0 +1,18 @@
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="{{url_for('static', filename='write.css')}}">
+        </head>
+        <body>
+            <h2>게시글 작성</h2>
+            <form action="{{url_for('write')}}" method="POST"> 
+                <input type="text" name="title" placeholder="제목" required>
+                <textarea name="content" placeholder="내용" required></textarea>
+                <button type="submit">등록</button>
+            </form>
+            <br>
+            <br>
+            <a href="{{url_for('home')}}"><button type="submit">목록</button></a>
+        </body>
+    </html>
