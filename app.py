@@ -7,7 +7,7 @@ app.secret_key = 'your_secret_key'
 
 def connect():
     return pymysql.connect(
-        host='localhost', user='root', password='asd098', db='crud_db', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor
+        host='localhost', user='root', password='', db='crud_db', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor
     )
 
 
